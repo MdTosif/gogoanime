@@ -5,13 +5,17 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
-wasm-bindgen = "0.2"
-wasm-bindgen-futures = "0.4"
 scraper = "0.19.0"
 reqwest = { version = "0.11" }
 getrandom = { version = "0.2", features = ["js"] }
 tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64 = "0.13.1"
+aes = "0.8.1"
+cbc = "0.1.2"
+cipher = "0.4.4"
+magic-crypt = "3.1.13"
+hex = "0.4"
+
